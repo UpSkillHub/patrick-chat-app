@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+font-family: "Barlow Semi Condensed", sans-serif;
+background-color: hsl(270, 20%, 96%);
+}
+
+
+.container{
+    /* height: 200vh; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid red;
+}
+
+.subcontainer{
+height: 50rem;
+/* gap: 30px; */
+display: grid;
+/* grid-template-rows: repeat(2,auto); */
+/* padding: 30px; */
+
+/* display: flex;
+flex-direction: column;
+justify-content: space-between; */
+
+}
+
+
+
+
+.container-color {
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%) , hsl(264, 100%, 61%) );
+    height: 25rem;
+    margin-right: 10px;
+    position: absolute;
+    width: 50%;
+    left: 0;
+    z-index: -1;
+    border-bottom-right-radius: 50%;
+}
+
+
+.container-mobile {
+   background-color: hsl(270, 20%, 96%);
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 39rem;
+    width: 18rem;
+    border: 10px solid white;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+
+.container-profile {
+    background-color: hsl(264, 100%, 61%);
+    color:hsl(270, 20%, 96%);
+    height: 5rem;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%
+}
+
+.arrow-left{
+color: hsl(0, 0%, 100%);
+}
+
+.left-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-profile{
+    height: 35px;
+    width:35px;
+    border-radius: 40px;
+    border: 1px solid white;
+    color: white
+}
+.profile-description h5{
+    font-size: 14px;
+
+}
+.profile-description p{
+    font-size: 12px;
+}
+
+.more{
+ justify-self: flex-end;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.container-message-1{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-1{
+    background-color: hsl(270, 7%, 64%);
+    color: hsl(276, 55%, 52%);
+    font-size: 12px;
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.container-message-2{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    
+}
+
+.message-2{
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(271, 15%, 43%);
+    font-size: 12px;
+    width: 60%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.sizing{
+    height: 4rem;
+}
+.container-pets{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.message-2-b{
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(271, 15%, 43%);
+    font-size: 12px;
+    width: 45%;
+    height: 2rem;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.radio-input{
+    display: flex;
+    justify-items: center;
+     background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+     height: 3rem;
+     width: 14rem;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 5px;
+     padding: 10px;
+     gap: 10px;
+     color: hsl(0, 0%, 100%);
+}
+
+.text-radio{
+
+    width: 65%;
+    font-size: 10px;
+}
+
+.type-message{
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(271, 15%, 43%);
+    font-size: 14px;
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+}
+
+.image-btn{
+
+    background-color: black;
+    color:white;
+    border-radius: 14px;
+}
+
+.dollar{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-message{
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    height:5vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: transparent;
+    border: none;
+
+}
+
+.container-intro{
+   text-align:center;
+   display: flex;
+   flex-direction:column;
+   justify-content: space-between;
+}
+.container-intro h1{
+font-size: 40px;
+}
+.paragraph{
+    color: hsl(270, 7%, 64%);
+}
