@@ -12,25 +12,15 @@ background-color: hsl(270, 20%, 96%);
 
 
 .container{
-    /* height: 200vh; */
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid red;
 }
 
 .subcontainer{
 height: 50rem;
-/* gap: 30px; */
 display: grid;
-/* grid-template-rows: repeat(2,auto); */
-/* padding: 30px; */
-
-/* display: flex;
-flex-direction: column;
-justify-content: space-between; */
-
 }
 
 
