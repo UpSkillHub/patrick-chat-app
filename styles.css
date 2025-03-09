@@ -5,13 +5,12 @@
 }
 
 body{
-
 font-family: "Barlow Semi Condensed", sans-serif;
 background-color: hsl(270, 20%, 96%);
 }
 
-
 .container{
+    height: 100vh;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -22,9 +21,6 @@ background-color: hsl(270, 20%, 96%);
 height: 50rem;
 display: grid;
 }
-
-
-
 
 .container-color {
     background: linear-gradient(to bottom, hsl(293, 100%, 63%) , hsl(264, 100%, 61%) );
@@ -46,26 +42,44 @@ display: grid;
     height: 39rem;
     width: 18rem;
     border: 10px solid white;
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 10px;
     margin-left: 20px;
 }
 
+.container-chat{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
 
 .container-profile {
     background-color: hsl(264, 100%, 61%);
     color:hsl(270, 20%, 96%);
     height: 5rem;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     background-image: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    position: relative
+}
+.call-position {
+    position: absolute;
+    width: 150px;
+    height: 1rem;
+    padding: 10px;
+    background-color: white;
+    top: 0;
+    left: 25%;
+    border-radius: 0 0 10px 10px;
+  
 }
 
 .profile-content{
@@ -73,16 +87,17 @@ display: grid;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    width: 100%
+    width: 100%;
 }
 
 .arrow-left{
-color: hsl(0, 0%, 100%);
+padding: 8px;
 }
 
 .left-profile {
     display: flex;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .img-profile{
@@ -92,24 +107,26 @@ color: hsl(0, 0%, 100%);
     border: 1px solid white;
     color: white
 }
+
 .profile-description h5{
     font-size: 14px;
-
 }
+
 .profile-description p{
     font-size: 12px;
 }
 
 .more{
  justify-self: flex-end;
+ padding-bottom: 8px;
 }
 
 .chat{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
+    gap: 18px;
 }
+
 
 .container-message-1{
     gap: 10px;
@@ -118,12 +135,15 @@ color: hsl(0, 0%, 100%);
 }
 
 .message-1{
-    background-color: hsl(270, 7%, 64%);
+    background-color: hsl(294, 28%, 87%);
     color: hsl(276, 55%, 52%);
     font-size: 12px;
     width: 70%;
     height: 3rem;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
     padding: 8px;
 }
 
@@ -141,7 +161,10 @@ color: hsl(0, 0%, 100%);
     font-size: 12px;
     width: 60%;
     height: 3rem;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
     padding: 8px;
 }
 
@@ -167,7 +190,10 @@ color: hsl(0, 0%, 100%);
     font-size: 12px;
     width: 45%;
     height: 2rem;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
     padding: 8px;
 }
 
@@ -175,8 +201,8 @@ color: hsl(0, 0%, 100%);
     display: flex;
     justify-items: center;
      background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-     height: 3rem;
-     width: 14rem;
+     height: 25%;
+     width: 12rem;
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
      border-bottom-right-radius: 10px;
@@ -187,7 +213,6 @@ color: hsl(0, 0%, 100%);
 }
 
 .text-radio{
-
     width: 65%;
     font-size: 10px;
 }
@@ -196,18 +221,17 @@ color: hsl(0, 0%, 100%);
     background-color:hsl(0, 0%, 100%);
     color: hsl(271, 15%, 43%);
     font-size: 14px;
-    width: 90%;
+    width: 100%;
     height: 3rem;
     border-radius: 10px;
-    padding: 8px;
+    padding: 10px;
     display: flex;
 }
 
 .image-btn{
-
     background-color: black;
-    color:white;
     border-radius: 14px;
+    padding: 8px;
 }
 
 .dollar{
@@ -223,7 +247,6 @@ color: hsl(0, 0%, 100%);
     border-bottom-left-radius: 10px;
     background: transparent;
     border: none;
-
 }
 
 .container-intro{
@@ -233,8 +256,103 @@ color: hsl(0, 0%, 100%);
    justify-content: space-between;
 }
 .container-intro h1{
+color: hsl(271, 36%, 24%);
 font-size: 40px;
 }
 .paragraph{
     color: hsl(270, 7%, 64%);
+}
+
+@media only screen and (min-width: 426px) {
+    .subcontainer{
+       display: grid;
+       grid-template-columns:repeat(2, auto) ;
+       height: 95vh;
+
+    }
+    .container-intro{
+        justify-items: center;
+        margin-top: 16rem;
+        margin-bottom:16rem;
+        margin-left: 3rem;
+        text-align: start;
+    }
+}
+
+@media only screen and (min-width: 769px){
+
+.container{
+    justify-content: center;
+    justify-items: center;
+    padding-top: 8rem;
+}
+
+.container-color {
+    height: 47rem;
+    width: 35%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.container-color-bottom{
+    background:hsl(300, 7%, 94%);
+    height: 50rem;
+    width: 25%;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    border-top-left-radius: 60%;
+    display: flex;
+}
+
+.subcontainer{
+    height: 39rem;
+    width: 45rem;
+}
+
+.container-mobile{
+height: 38rem;
+}
+
+.dollar{
+    font-size: 16px;
+    font-weight: bold;
+} 
+
+.img-profile{
+    height: 35px;
+    width:35px;
+    border-radius: 40px;
+}
+
+.profile-description h5{
+    font-size: 12px;
+}
+
+.profile-description p{
+    font-size: 10px;
+}
+
+.message-1{
+    font-size: 11px;
+    width: 70%;
+    height: 3rem;
+}
+
+.message-2{
+
+    font-size: 11px;
+    width: 60%;
+    height: 3rem;
+}
+
+.message-2-b{
+    font-size: 11px;
+  
+}
+
+
+
 }
