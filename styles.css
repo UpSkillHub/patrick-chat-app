@@ -200,16 +200,16 @@ padding: 8px;
 .radio-input{
     display: flex;
     justify-items: center;
-     background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-     height: 25%;
-     width: 12rem;
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
-     border-bottom-right-radius: 10px;
-     border-bottom-left-radius: 5px;
-     padding: 10px;
-     gap: 10px;
-     color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    height: 25%;
+    width: 12rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+    color: hsl(0, 0%, 100%);
 }
 
 .text-radio{
@@ -226,6 +226,7 @@ padding: 8px;
     border-radius: 10px;
     padding: 10px;
     display: flex;
+    justify-content: flex-end;
 }
 
 .image-btn{
