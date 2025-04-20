@@ -51,14 +51,18 @@ display: grid;
 .container-chat{
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5px;
+    gap: 4px;
+    height: 32rem;
+    
 }
 
 .container-profile {
-    background-color: hsl(264, 100%, 61%);
+    background-color: hsl(263, 22%, 27%);
     color:hsl(270, 20%, 96%);
     height: 5rem;
     padding: 5px;
@@ -124,7 +128,10 @@ padding: 8px;
 .chat{
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
+    height: 28rem;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 
@@ -243,7 +250,7 @@ padding: 8px;
 .input-message{
     background-color: hsl(0, 0%, 100%);
     width: 90%;
-    height:5vh;
+    height:4vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background: transparent;
