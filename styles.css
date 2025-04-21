@@ -37,7 +37,11 @@ background-color: hsl(270, 20%, 96%);
     border-bottom-right-radius: 50%;
 }
 
-
+.phone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container-mobile {
     background-color: hsl(270, 20%, 96%);
     border-radius: 30px;
@@ -56,8 +60,8 @@ background-color: hsl(270, 20%, 96%);
 .container-chat{
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -233,17 +237,19 @@ padding: 8px;
     color: hsl(271, 15%, 43%);
     font-size: 14px;
     width: 100%;
-    height: 3rem;
+    height: 2rem;
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-btn{
     background-color: black;
     border-radius: 14px;
     padding: 8px;
+    height: 1.6rem;
 }
 
 .dollar{
@@ -311,7 +317,13 @@ padding: 8px;
     border-bottom-left-radius: 50%;
 }
 
-
+.container-chat{
+    height: 30rem;
+    gap:8px;
+}
+.chat{
+    height: 30rem;
+}
 .container-intro{
     gap: 20px;
 }
@@ -338,7 +350,7 @@ padding: 8px;
     line-height: 1.4;
 }
 .container-mobile{
-height: 37rem;
+    height: 37rem;
 }
 
 .dollar{
