@@ -311,6 +311,10 @@ padding: 8px;
     border-bottom-left-radius: 50%;
 }
 
+
+.container-intro{
+    gap: 20px;
+}
 .container-color-bottom{
     background:hsl(300, 7%, 94%);
     height: 50rem;
@@ -326,11 +330,15 @@ padding: 8px;
 
 .subcontainer{
     height: 39rem;
-    width: 45rem;
+    width: 50rem;
 }
 
+.paragraph{
+    font-size: 20px;
+    line-height: 1.4;
+}
 .container-mobile{
-height: 38rem;
+height: 37rem;
 }
 
 .dollar{
