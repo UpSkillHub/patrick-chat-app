@@ -10,16 +10,20 @@ background-color: hsl(270, 20%, 96%);
 }
 
 .container{
-    height: 100vh;
+    height: 55rem;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 .subcontainer{
-height: 50rem;
-display: grid;
+    height: 52rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 }
 
 .container-color {
@@ -35,15 +39,16 @@ display: grid;
 
 
 .container-mobile {
-   background-color: hsl(270, 20%, 96%);
+    background-color: hsl(270, 20%, 96%);
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 39rem;
-    width: 18rem;
+    height: 38rem;
+    width: 17rem;
     border: 10px solid white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     margin-left: 20px;
 }
@@ -58,7 +63,6 @@ display: grid;
     justify-content: space-between;
     gap: 4px;
     height: 32rem;
-    
 }
 
 .container-profile {
@@ -255,20 +259,24 @@ padding: 8px;
     border-bottom-left-radius: 10px;
     background: transparent;
     border: none;
+    outline: none;
 }
 
 .container-intro{
    text-align:center;
    display: flex;
    flex-direction:column;
-   justify-content: space-between;
+   gap: 12px;
+   padding-left: 10px;
+   padding-right: 10px;
 }
-.container-intro h1{
-color: hsl(271, 36%, 24%);
-font-size: 40px;
+.container-intro h2{
+    color: hsl(271, 36%, 24%);
+    font-size: 40px
 }
 .paragraph{
     color: hsl(270, 7%, 64%);
+
 }
 
 @media only screen and (min-width: 426px) {
@@ -294,6 +302,7 @@ font-size: 40px;
     justify-items: center;
     padding-top: 8rem;
 }
+
 
 .container-color {
     height: 47rem;
